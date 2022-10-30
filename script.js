@@ -40,54 +40,12 @@ function getfood(event) {
 })
 }
 
-// function formatRecipeUrl(recipeName, recipeId){
-//     var name = recipeName.split(" ").join("-")
-//     var recipeUrl = `https://spoonacular.com/${name}-${recipeId}`
-//     return recipeUrl
-// };
-
-
-
-// <a href={`https://spoonacular.com/recipes/${recipeName}-${recipeId}`} > Recipe Here </a>
-
-
-
-// fetch('https://spoonacular.com/recipes/${recipeName}-${recipeId}')
-//   .then(response => response.json())
-//   .then(data => {
-//     data.result.forEach((item) => {
-//       document.body.innerHTML += '<br><a href="https://www.google.com">' + $recipeName + '</a>';
-//     })
-//  });
-
-// function getRecipe() {
-// <a href= { 
-//     fetch(`https://spoonacular.com/recipes/${recipeName}-${recipeId}`)}> 
-//     Recipe Here </a>
-//     formatRecipeUrl()
-// }
-
-
-
-
-
-
-
-// {
-//     "id": 716429,
-//     "title": "Past with Garlic, Scallions, Cauliflower"
-// }
-
-
-
-
-
-
-
-// .then(response => {
-//     var title = response.title
-//     var id = response.id
-
-//     var myRecipeUrl = formatRecipeUrl(title, id)
-//     var myRecipeLink = `<a href={${myRecipeUrl}}>My Recipe Link</a>
-// })
+// navbar hamburger JS
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
