@@ -91,3 +91,4 @@ function getfood(event) {
 //     var myRecipeUrl = formatRecipeUrl(title, id)
 //     var myRecipeLink = `<a href={${myRecipeUrl}}>My Recipe Link</a>
 // })
+console.log(data)
