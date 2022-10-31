@@ -3,12 +3,11 @@
     font-family: "roboto", sans-serif;
 }
 
-.searches {
+.Container {
     max-width: 25%;
     margin: auto;
     display: flex;
 }
-
 
 .h1, h1 {
     color: aqua;
@@ -19,15 +18,22 @@
 } 
 
 h2 {
+    color: white;
     font-size: x-large;
     font-family: none;
-    text-shadow: 2px 2px darkcyan;
 }
 
 div#srchbtn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 

@@ -1,0 +1,59 @@
+body {
+    background-color: #333;
+    font-family: "roboto", sans-serif;
+}
+
+
+.recipe {
+    display: inline-grid;
+    width: 30%;
+    font-size: small;
+    border: 5px solid rgb(0, 0, 0);
+     margin: 10px;
+}
+
+img.image {
+    padding-left: 17%;
+}
+
+h1.title {
+    padding-left: 18%;
+    color: white;
+}
+
+label.item {
+    color: white;
+    padding-left: 2%;
+    padding-right: 5px;
+    font-family: monospace;
+}
+
+element.style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button#btn {
+    display: flex;
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    font-size: larger;
+    font-family: monospace;
+    transform: scale3d(1.5, 1.5, 1.5);
+    cursor: crosshair;
+    box-shadow: 2px 2px #9d5ae5;
+    
+}
+
+#btn a:hover {
+    background-color: rgb(204, 44, 44);
+    color: rgb(145, 25, 25);
+  } 

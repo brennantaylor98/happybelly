@@ -19,7 +19,7 @@
             <a href="#home" class="active">Happy Belly</a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-              <a href="#bmiCalc">BMI Calculator</a>
+              <a href="https://www.google.com">BMI Calculator</a>
               <a href="#calCalc">Calorie Calculator</a>
               <a href="#recRecipes">Find Recipes</a>
               <a href="#waterConsump">Water Consumption</a>
@@ -36,17 +36,17 @@
         <div class="grid-x grid-padding-x">
             <div class="cell small-12 large-4 small-order-1">
                 <!-- BMI Calculator -->
-              <div class="cell auto body" style="height: 100%">
+              <div class="cell auto body"  style="height: 100%">
                 <h2 id="bmiCalc">BMI Calculator</h2>
                 <div>
                     <label>Weight:
-                        <input type="number" placeholder="Current Weight lbs">
+                        <input id="weight" type="number" placeholder="Current Weight lbs">
                       </label>
                 </div>
                 <!-- height -->
                 <div>
                     <label>Height:
-                        <select name="feet" placeholder="Ft">
+                        <select id="feet" name="feet" placeholder="Ft">
                             <option name="feet" value selected="selected" disabled="disabled" place>Height Ft.</option>
                             <option name="feet" value="3">3 ft</option>
                             <option name="feet" value="4">4 ft</option>
@@ -54,7 +54,8 @@
                             <option name="feet" value="6">6 ft</option>
                             <option name="feet" value="7">7 ft</option>
                         </select>
-                        <select>
+
+                        <select id="inches">
                             <option name="inches" value selected="selected" disabled="disabled">In.</option>
                             <option name="inches" value="0">0 in</option>
                             <option name="inches" value="1">1 in</option>
@@ -68,13 +69,21 @@
                             <option name="inches" value="9">9 in</option>
                             <option name="inches" value="10">10 in</option>
                             <option name="inches" value="11">11 in</option>
-                            <option name="inches" value="12">12 in</option>
+
                         </select>
                     </label>
                 </div>
+
+                <div class="main1" id="Main1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at nemo quaerat ea numquam vel labore sit atque voluptatem quod doloremque sequi quia libero, eligendi quasi! Tenetur, quos laboriosam? Vitae.</p>
+                    
+                    //the appended return from the bmi call will go here
+                </div>
+
+
                 <!-- BMI Calculate button -->
                 <div>
-                    <button class="submit success button float-right">Calculate</button>
+                    <button class="submit success button  float-right" id= "bmiCalcBtn">Calculate</button>
                 </div>
               </div>
          
@@ -100,12 +109,14 @@
         </div>
     </div>
        
-      <!-- footer -->
+
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="./assets/JS/script.js"></script>
+    <script src="./assets/JS/bmi.js"></script>
     <!-- <script src="js/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script> -->
-
+    
 </body>
 </html>
