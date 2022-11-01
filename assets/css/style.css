@@ -69,6 +69,14 @@ label {
     height: 100%;
 }
 
+.bmicard {
+    color: white;
+}
+
+#bmiCalcBtn {
+    border-radius: 25px;
+}
+
 #recBtnDiv {
     display: flex;
     justify-content: center;
