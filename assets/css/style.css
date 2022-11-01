@@ -135,4 +135,7 @@ label {
     align-items: center;
     justify-content: left;
     }
-    
+
+    .menu {
+        font-size: 3rem;
+    }
