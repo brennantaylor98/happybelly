@@ -13,14 +13,12 @@
     <body>
         <!-- header -->
         <header>
-            
         <!-- nav -->
         <div class="topnav">
             <a href="#home" class="active">Happy Belly</a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-              <a href="https://www.google.com">BMI Calculator</a>
-              <a href="#calCalc">Calorie Calculator</a>
+              <a href="#bmiCalc">BMI Calculator</a>
               <a href="#recRecipes">Find Recipes</a>
               <a href="#waterConsump">Water Consumption</a>
             </div>
@@ -38,6 +36,22 @@
                 <!-- BMI Calculator -->
               <div class="cell auto body"  style="height: 100%">
                 <h2 id="bmiCalc">BMI Calculator</h2>
+                <!-- gender -->
+                <div>
+                    <Label>Gender:
+                        <select id="sex" name="sex" placeholder="Gender">
+                            <option name="sex" value selected="selected" disabled="disabled" place>Gender</option>
+                            <option name="sex" value="m">Male</option>
+                            <option name="sex" value="f">Female</option>
+                        </select>
+                    </Label>
+                </div> 
+                <!-- age -->
+                <div>
+                    <label>Age:
+                        <input id="age" type="number" placeholder="Current Age">
+                      </label>
+                </div>
                 <div>
                     <label>Weight:
                         <input id="weight" type="number" placeholder="Current Weight lbs">
@@ -54,7 +68,6 @@
                             <option name="feet" value="6">6 ft</option>
                             <option name="feet" value="7">7 ft</option>
                         </select>
-
                         <select id="inches">
                             <option name="inches" value selected="selected" disabled="disabled">In.</option>
                             <option name="inches" value="0">0 in</option>
@@ -69,24 +82,20 @@
                             <option name="inches" value="9">9 in</option>
                             <option name="inches" value="10">10 in</option>
                             <option name="inches" value="11">11 in</option>
-
                         </select>
                     </label>
                 </div>
-
                 <div class="main1" id="Main1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, at nemo quaerat ea numquam vel labore sit atque voluptatem quod doloremque sequi quia libero, eligendi quasi! Tenetur, quos laboriosam? Vitae.</p>
-                    
-                    //the appended return from the bmi call will go here
+                    <h2>BMI Results</h2>
+                    <div id="bmiResults">
+                        
+                    </div>
                 </div>
-
-
                 <!-- BMI Calculate button -->
                 <div>
                     <button class="submit success button  float-right" id= "bmiCalcBtn">Calculate</button>
                 </div>
               </div>
-         
             </div>
             <div class="cell small-12 large-4 small-order-2">
             <!-- Recommended Foods -->
@@ -96,27 +105,18 @@
                     <a href="./html/recipe.html">
                         <button id="recipesBtn" class="submit success button" type="submit">Find Recipes!</button>
                     </a>
-                    
                 </div>
             </div> 
             </div>
-                 
-            
             <!-- water consumption -->
             <div class="cell small-12 large-4 small-order-3">
                 <h2 id="waterConsump">Water Consumption</h2>
             </div>
         </div>
     </div>
-       
-
     
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="./assets/JS/bmi.js"></script>
-    <!-- <script src="js/jquery.min.js"></script>
-    <script src="js/foundation.min.js"></script> -->
-    
 </body>
 </html>
